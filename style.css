@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 /* Header */
@@ -17,17 +17,17 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #e3f2fd;
+    background-color: #1a1a1a;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -40,7 +40,7 @@ body {
 #menu-icon {
     display: none;
     font-size: 2rem;
-    color: #000;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -48,14 +48,14 @@ body {
 .navbar a {
     margin-left: 1.5rem;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     font-weight: 500;
     transition: 0.3s;
 }
 
 .navbar a:hover {
     color: #0d47a1;
-    background-color: #f5f5dc;
+    background-color: #333333;
     padding: 0.4rem 0.8rem;
     border-radius: 5px;
 }
@@ -63,7 +63,7 @@ body {
 /* Home Section */
 .home {
     padding: 4rem 2rem;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 .home-container {
@@ -87,7 +87,7 @@ body {
 
 .text-content h3 {
     font-size: 1.4rem;
-    color: #333;
+    color: #f1f1f1;
     margin: 0.8rem 0;
 }
 
@@ -108,7 +108,7 @@ body {
 .social-icons a {
     margin-right: 1rem;
     font-size: 1.5rem;
-    color: #000;
+    color: #ffffff;
     transition: 0.3s;
 }
 
@@ -144,7 +144,7 @@ body {
 .image-content img {
     width: 220px;
     height: 220px;
-    border-radius: 50%;
+  
     object-fit: cover;
     border: 5px solid #0d47a1;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -162,7 +162,7 @@ body {
 /* About Section */
 .about {
     padding: 4rem 2rem;
-    background-color: #e3f2fd;
+    background-color: #1a1a1a;
 }
 
 .about-container {
@@ -179,7 +179,7 @@ body {
 
 .about-container p {
     font-size: 1.1rem;
-    color: #333;
+    color: #f1f1f1;
     line-height: 1.7;
     font-weight: 400;
 }
@@ -187,7 +187,7 @@ body {
 /* Gallery Section */
 .gallery {
     padding: 4rem 2rem;
-    background-color: #e3f2fd;
+    background-color: #1a1a1a;
 }
 
 .gallery-container {
@@ -258,13 +258,10 @@ body {
     margin: 0;
 }
 
-
-     
-
 /* Contact Section */
 .contact {
     padding: 4rem 2rem;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 .contact-container {
@@ -281,7 +278,7 @@ body {
 
 .contact-container p {
     font-size: 1.1rem;
-    color: #333;
+    color: #f1f1f1;
     margin-bottom: 2rem;
 }
 
@@ -300,7 +297,7 @@ body {
 
 .contact-form label {
     font-size: 1rem;
-    color: #333;
+    color: #f1f1f1;
     margin-bottom: 0.5rem;
 }
 
@@ -348,3 +345,142 @@ body {
     }
 }
 
+/* Skills Section */
+.skills {
+    background-color: #000000;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.skills-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.skills-category {
+    margin-bottom: 30px;
+}
+
+.skills-category h3 {
+    font-size: 2rem;
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+.skills-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-category li {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: 400;
+}
+
+/* Progress Bar Container */
+.skill {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.skill span {
+    display: inline-block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.progress-bar {
+    background-color: #333333;
+    border-radius: 20px;
+    height: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #0d47a1;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.percentage {
+    display: inline-block;
+    font-size: 1rem;
+    color: #e9eaf0;
+    font-weight: 500;
+    margin-top: 5px;
+}
+/* Soft Skills */
+.soft-skills {
+    background-color: #d8dcde;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.soft-skills-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.soft-btn {
+    position: relative;
+    background-color: transparent;
+    color: #0d47a1;
+    border: 2px solid #0d47a1;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.soft-btn::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0d47a1;
+    color: #e6eaef;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.soft-btn::before {
+    content: "";
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #0d47a1 transparent transparent transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.soft-btn:hover::after,
+.soft-btn:hover::before {
+    opacity: 1;
+}
