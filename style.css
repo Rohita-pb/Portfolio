@@ -1,0 +1,350 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #e3f2fd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: #0d47a1;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #0d47a1;
+    background-color: #f5f5dc;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+}
+
+/* Home Section */
+.home {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.text-content {
+    flex: 1 1 500px;
+    padding: 2rem;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    color: #0d47a1;
+}
+
+.text-content h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 0.8rem 0;
+}
+
+.highlight {
+    color: #0d47a1;
+    font-weight: bold;
+}
+
+.text-content p {
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: #000;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0d47a1;
+    transform: scale(1.2);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #0d47a1;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #08306b;
+    transform: scale(1.05);
+}
+
+/* Profile Image */
+.image-content {
+    flex: 1 1 300px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.image-content img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0d47a1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease;
+    float: left; /* Floating image to the left */
+    margin-right: 20px; /* Space between the image and text */
+    vertical-align: middle; /* Aligns the image in the middle vertically */
+}
+
+.image-content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(13, 71, 161, 0.6);
+}
+
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    background-color: #e3f2fd;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-container h2 {
+    font-size: 2rem;
+    color: #0d47a1;
+    margin-bottom: 1rem;
+}
+
+.about-container p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 4rem 2rem;
+    background-color: #e3f2fd;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    justify-items: center;
+}
+
+.hobby-card {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.hobby-card h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    font-size: 1.4rem;
+    z-index: 2;
+    text-shadow: 0px 0px 6px #000;
+}
+
+.hobby-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(13, 71, 161, 0.85);
+    color: #fff;
+    opacity: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.4s ease;
+    border-radius: 15px;
+}
+
+.hobby-card:hover .overlay {
+    opacity: 1;
+}
+
+.hobby-card:hover img {
+    transform: scale(1.05);
+}
+
+.hobby-card .overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+     
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2rem;
+    color: #0d47a1;
+    margin-bottom: 1rem;
+}
+
+.contact-container p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Contact Form */
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0d47a1;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 1rem 2rem;
+    background-color: #0d47a1;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #08306b;
+    transform: scale(1.05);
+}
+
+/* Responsive for Contact Form */
+@media (max-width: 768px) {
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        padding: 2rem;
+    }
+}
+
